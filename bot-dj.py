@@ -36,6 +36,7 @@ while exit == False:
         question = input("")
         answer,id = generate_answer(runtimeClient,kb_id,runtime_key,question)
         textToVoice(answer)
+        print(answer)
         if id =="89":
             textToVoice("¿Qué canción quieres escuchar?")
             song = input("¿Qué canción quieres escuchar?")
@@ -45,6 +46,7 @@ while exit == False:
         question = voiceToText()
         answer,id = generate_answer(runtimeClient,kb_id,runtime_key,question)
         textToVoice(answer)
+        print(answer)
         if id =="89":
             textToVoice("¿Qué canción quieres escuchar?")
             song = voiceToText()
